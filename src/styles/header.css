@@ -3,3 +3,7 @@
     height: 50px;
     margin-right: 20px;
 }
+
+.bg-header{
+    background-color: rgb(45, 45, 51);
+}

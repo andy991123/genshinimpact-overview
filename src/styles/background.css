@@ -4,9 +4,12 @@
     background-size: cover;
 }
 
-.with-blur-backdrop {
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
 
-    height: 100vh;
-    background-color : rgba(0, 0, 0, 0.5);
-    backdrop-filter : blur(4px);
+.blur-background{
+    backdrop-filter: blur(30px);
+
 }
