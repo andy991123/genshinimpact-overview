@@ -5,3 +5,8 @@
 .bg-title{
     background-color: rgb(60, 60, 66)
 }
+
+.card-icon{
+ width: 300px;
+ height: auto;
+}

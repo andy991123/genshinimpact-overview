@@ -4,6 +4,11 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import hutao from '../imgs/hutao.jpg';
 import background from '../imgs/background.jpg';
+import character from '../imgs/overview/Hu_Tao.png';
+import weapon from '../imgs/overview/Weapon_Staff_of_Homa_2nd.png';
+import artifact from '../imgs/overview/artifact-crimson-witch-of-flames.png';
+import hutaoface from '../imgs/overview/Hu-Tao-PNG-Background.png';
+
 
 function Overview() {
 
@@ -36,10 +41,16 @@ function Overview() {
 
 
                     <div className=' p-md-5 bg-title ' style={{ transform: 'scale(0.95)' }}>
-                        <div className=' col-lg-6 '>
+                        <div className='row'>
+                        <div className=' col-lg-8 '>
                             <h1 className='display-4 fst-italic text-light fw-bold'>Tan's self developed Genshin Impact Wiki webpage</h1>
-                            <p className='lead mt-4 text-light'>This is a self developed Genshin impact wiki webpage which is made by a player called Tan. Feel free to enjoy!</p>
+                            <p className='lead mt-4 text-light'>This is a self-developed Genshin Impact wiki webpage created by a player named Tan. Feel free to enjoy!</p>
                         </div>
+                           <div className=' col-lg-4 '>
+                            <img src={hutaoface} className="card-icon float-end " alt='hutao!'/>
+                        </div>
+                        </div>
+                      
                     </div>
 
                     <div className='row row-cols-3  '>
@@ -47,7 +58,7 @@ function Overview() {
                             <div className="card mb-3 bg-title" style={{ maxWidth: 550, transform: 'scale(0.9)' }}>
                                 <div className="row g-0">
                                     <div className="col-md-4">
-                                        <img src="..." className="img-fluid rounded-start" alt="..." />
+                                        <img src={character} className="img-fluid" alt="..." />
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body">
@@ -63,7 +74,7 @@ function Overview() {
                             <div className="card mb-3  bg-title" style={{ maxWidth: 550, transform: 'scale(0.9)' }}>
                                 <div className="row g-0">
                                     <div className="col-md-4">
-                                        <img src="..." className="img-fluid rounded-start" alt="..." />
+                                        <img src={weapon} className="img-fluid" alt="..." />
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body">
@@ -79,7 +90,7 @@ function Overview() {
                             <div className="card mb-3  bg-title" style={{ maxWidth: 550, transform: 'scale(0.9)' }}>
                                 <div className="row g-0">
                                     <div className="col-md-4">
-                                        <img src="..." className="img-fluid rounded-start" alt="..." />
+                                        <img src={artifact} className="img-fluid  " alt="..." />
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body">
